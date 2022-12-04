@@ -2,9 +2,7 @@ package Tarea1Stream.CHGT;
 
 import Tarea1Stream.Curso;
 
-import java.awt.font.NumericShaper;
 import java.util.*;
-import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
 // Y la siguiente coleccion
@@ -44,7 +42,7 @@ public class Coleccion {
          cursos.stream().
          sorted(Comparator.comparing(Curso::getDuracion).reversed())
                  .limit(3)
-                 .forEach(a -> System.out.println(a.getTitulo()));
+                 .forEach(a -> System.out.println("-"+a.getTitulo()));
 
 
         System.out.println("\n********************************************************\n");
